@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<title>Duet</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="d/swipe.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body scroll="no">
+		<div id="leftContainer" class="move-1">
+			<div id="optionDiv">
+				<div id="optionTitle">设置</div>
+				<br/>
+				<div id="controllerD">
+					控制</div>
+				<div class="line">&nbsp;&nbsp;<span class="optionText" id="reverseText">反转控制</span><span class="switch off" id="switchReverse">关闭</span></div>
+				<br/>
+				<div id="soundD">
+					音频</div>
+				<div class="line">&nbsp;&nbsp;<span class="optionText" id="backgroundMusicText">背景音乐</span><span class="switch on" id="backMusicSwitch">开启</span></div>
+				<div class="line">&nbsp;&nbsp;<span class="optionText" id="soundEffectText">声音效果</span><span class="switch on" id="soundEffectSwitch">开启</span></div>
+				<br/>
+				<div id="imageD">
+					画面</div>
+				<!--<div class="line">&nbsp;&nbsp;背景图片<span class="switch on">开启</span></div>-->
+				<div class="line">&nbsp;&nbsp;<span class="optionText" id="changeBackgroundText">背景切换</span><span class="switchBg on" id="changeBackground">切换</span></div>
+				<br/>
+				<div id="languageD">
+					语言</div>
+				<!--<div class="line">&nbsp;&nbsp;背景图片<span class="switch on">开启</span></div>-->
+				<div class="line">&nbsp;<span class="radioSwitch on" langangename="chinese">简体中文</span></div>
+				<div class="line">&nbsp;<span class="radioSwitch off" langangename="tradition">繁體中文</span></div>
+				<div class="line">&nbsp;<span class="radioSwitch off" langangename="english">English</span></div>
+			</div>
+			<div id="closeLeftBtn"></div>
+		</div>
+		<div id="rightContainer" class="move-1">
+			<div id="closeRightBtn"></div>
+			<div id="levelDiv">
+				<div id="levelTitle">关卡</div>
+				<div id="levelframe">
+					<div class="swiper-container swiper-container-horizontal">
+						<div class="swiper-pagination swiper-pagination-clickable" id="pagination"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="overflow-y: scroll;">
+								<table style="width:75%;margin-left: 5%;">
+									<tr>
+										<td colspan="3">
+											<h1 id="story">故事</h1>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<h2 id="unknow">无知</h2>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="0">I</div>
+										</td>
+										<td>
+											<div class="levelBox" level="1">II</div>
+										</td>
+										<td>
+											<div class="levelBox" level="2">III</div>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="3">IV</div>
+										</td>
+										<td>
+											<div class="levelBox" level="4">V</div>
+										</td>
+										<td>
+											
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<h2 id="unknow">否定</h2>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="5">I</div>
+										</td>
+										<td>
+											<div class="levelBox" level="6">II</div>
+										</td>
+										<td>
+											<div class="levelBox" level="7">III</div>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="8">IV</div>
+										</td>
+										<td>
+											<div class="levelBox" level="9">V</div>
+										</td>
+										<td>
+											<div class="levelBox" level="10">V</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<h2 id="unknow">愤怒</h2>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="5">I</div>
+										</td>
+										<td>
+											<div class="levelBox" level="6">II</div>
+										</td>
+										<td>
+											<div class="levelBox" level="7">III</div>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="8">IV</div>
+										</td>
+										<td>
+											<div class="levelBox" level="9">V</div>
+										</td>
+										<td>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+							<div class="swiper-slide">
+								<h1>&nbsp;&nbsp;尾声</h1>
+							</div>
+							<div class="swiper-slide">
+								<h1>&nbsp;&nbsp;加演</h1>
+							</div>
+							<div class="swiper-slide">
+								<h1>&nbsp;&nbsp;无尽</h1>
+							</div>
+							<div class="swiper-slide">
+								<h1>&nbsp;&nbsp;速跑</h1>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<audio src="" autoplay="autoplay" id="backgroundMusic"></audio>
+	</body>
+	<script src="js/jquery-2.1.0.js"></script>
+	<script src="js/ion.sound.min.js"></script>
+	<script src="js/src/sound.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/language/chinese.js"></script>
+	<script src="js/language/tradition.js"></script>
+	<script src="js/language/english.js"></script>
+	<script src="js/language/languageLoad.js"></script>
+	<script src="js/trianglify/trianglify.min.js"></script>
+	<script src="js/src/static.js"></script>
+	<script src="js/pixi.min.js"></script>
+	<script src="js/src/scene.js"></script>
+	<script src="js/src/init.js"></script>
+	<script src="js/level/level.js"></script>
+	<script src="js/level/loadLevel.js"></script>
+	<script src="js/src/animate.js"></script>
+	<script>
+		$(".levelBox").bind("click", function() {
+			var levelNum = $(this).attr("level");
+			startGameLevel(levelNum);
+		}).bind("touchstart", function() {
+			var levelNum = $(this).attr("level");
+			startGameLevel(levelNum);
+		})
+
+		function startGameLevel(levelNum) {
+			isInitRotation = false;
+			$("#rightContainer").css("right", -window.innerHeight / 16 * 9 + "px");
+			setTimeout(function() {
+				$("#rightContainer").css("display", "none");
+			}, 500);
+			stage.removeChild(logoText);
+			stage.removeChild(versionText);
+			stage.removeChild(optionBtn);
+			stage.removeChild(startBtn);
+			obj.y = (sceneY - sceneX) + (sceneX) * 3 / 5;
+			startlevel(levelNum);
+		}
+		$("#switchReverse").click(function() {
+			if (isReverse == 1) {
+				isReverse = -1;
+				$("#switchReverse").text(languageMap.open).removeClass("off").addClass("on");
+			} else {
+				isReverse = 1;
+				$("#switchReverse").text(languageMap.close).removeClass("on").addClass("off");
+			}
+		})
+		$("#changeBackground").click(function() {
+			var pattern = Trianglify({
+				height: 1600 / quality,
+				width: 900 / quality,
+				cell_size: 30 + Math.random() * 100
+			})
+			background.texture = PIXI.Texture.fromImage(pattern.png());
+		})
+		$("#backMusicSwitch").click(function() {
+			if (backgroundMusic.paused) {
+				backgroundMusic.play();
+				$("#backMusicSwitch").text(languageMap.open).removeClass("off").addClass("on");
+			} else {
+				backgroundMusic.pause();
+				$("#backMusicSwitch").text(languageMap.close).removeClass("on").addClass("off");
+			}
+		})
+		
+		$("#soundEffectSwitch").click(function(){
+			console.log(isOpenSoundEffect!=isOpenSoundEffect)
+			if(isOpenSoundEffect){
+				isOpenSoundEffect=false;
+				ion.sound.volume=0;
+				$("#soundEffectSwitch").removeClass("on").addClass("off").text(languageMap.close);
+			}else{
+				isOpenSoundEffect=true;
+				ion.sound.volume=1;
+				$("#soundEffectSwitch").removeClass("off").addClass("on").text(languageMap.open);
+			}
+			
+		})
+		
+		$(".radioSwitch").click(function(event){
+			$(".radioSwitch").removeClass("on").addClass("off");
+			$(this).removeClass("off").addClass("on");
+			changeLanguage($(this).attr("langangename"));
+			
+		})
+		reflashLanguage();
+	</script>
+
+</html>

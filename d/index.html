@@ -1,0 +1,159 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Swiper demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" href="swipe.css">
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: transparent;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				color: white;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+			}
+			
+			h1 {
+				height: auto;
+				width: 100%;
+				color: white;
+				font-family: "微软雅黑";
+				text-align: left;
+				font-weight: 100;
+			}
+			
+			h2 {
+				margin-top: 5%;
+				height: auto;
+				width: 100%;
+				color: #aaa;
+				font-family: "微软雅黑";
+				text-align: left;
+				font-weight: 100;
+			}
+			
+			.swiper-pagination-bullet {
+				border-radius: 10%;
+			}
+			
+			.levelBox {
+				background-color: #777;
+				color: #fff;
+				text-align: center;
+				font-family: "微软雅黑";
+				float: left;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container swiper-container-horizontal">
+			<div class="swiper-pagination swiper-pagination-clickable" id="pagination"></div>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<table style="width:95%;margin-left: 5%;">
+						<tr>
+							<td colspan="3">
+								<h1>故事</h1>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<h2>无知</h2>
+							</td>
+						</tr>
+						<tr class="boxTd">
+							<td>
+								<div class="levelBox" level="1">I</div>
+							</td>
+							<td>
+								<div class="levelBox" level="2">II</div>
+							</td>
+							<td>
+								<div class="levelBox" level="3">III</div>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+				<div class="swiper-slide">
+					<h1>&nbsp;&nbsp;尾声</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>&nbsp;&nbsp;加演</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>&nbsp;&nbsp;无尽</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>&nbsp;&nbsp;速跑</h1>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
+<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		effect: 'coverflow',
+		grabCursor: true,
+		centeredSlides: true,
+		slidesPerView: 1,
+		paginationClickable: true,
+		coverflow: {
+			rotate: 50,
+			stretch: 0,
+			depth: 100,
+			modifier: 1,
+			slideShadows: false
+		},
+		spaceBetween: 5,
+		loop: true
+	});
+	window.onresize = function() {
+			$("h1").css("font-size", window.innerHeight / 160 * 7 + "px").css("height", window.innerHeight / 160 * 7 + "px");
+			$("h2").css("font-size", window.innerHeight / 160 * 5 + "px").css("height", window.innerHeight / 160 * 5 + "px");
+			$(".swiper-pagination-bullet").css("width", window.innerHeight / 16 + "px").css("height", window.innerHeight / 120 + "px");
+			$("#pagination").css("top", window.innerHeight / 64 + "px");
+			$(".swiper-wrapper").css("margin-top", window.innerHeight / 24 + "px");
+			$(".levelBox").css("width", window.innerHeight / 8.5 + "px").css("height", window.innerHeight / 8.5 + "px").css("margin-top", window.innerHeight / 34 + "px").css("line-height", window.innerHeight / 8.5 + "px").css("font-size", window.innerHeight / 16 + "px");
+		}
+	
+	$(".levelBox").bind("click",function(){
+		var levelNum=$(this).attr("level");
+		alert(levelNum)
+	}).bind("touchstart",function(){
+		var levelNum=$(this).attr("level");
+		alert(levelNum)
+	})
+</script>

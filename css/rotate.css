@@ -1,0 +1,264 @@
+.rotate-5-ac {
+	/* css3 animation */
+	
+	-webkit-animation: anim4 5s linear infinite;
+	-moz-animation: anim4 5s linear infinite;
+	-ms-animation: anim4 5s linear infinite;
+	-o-animation: anim4 5s linear infinite;
+	animation: anim4 5s linear infinite;
+}
+/* css3 keyframes - animation 4 */
+
+@-webkit-keyframes anim4 {
+	from {
+		-webkit-transform: rotateZ(0deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(180deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+@-moz-keyframes anim4 {
+	from {
+		-moz-transform: rotateZ(0deg);
+	}
+	50% {
+		-moz-transform: rotateZ(180deg);
+	}
+	to {
+		-moz-transform: rotateZ(360deg);
+	}
+}
+@-ms-keyframes anim4 {
+	from {
+		-ms-transform: rotateZ(0deg);
+	}
+	50% {
+		-ms-transform: rotateZ(180deg);
+	}
+	to {
+		-ms-transform: rotateZ(360deg);
+	}
+}
+@-o-keyframes anim4 {
+	from {
+		-o-transform: rotateZ(0deg);
+	}
+	50% {
+		-o-transform: rotateZ(180deg);
+	}
+	to {
+		-o-transform: rotateZ(360deg);
+	}
+}
+@keyframes anim4 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	50% {
+		transform: rotateZ(180deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+.rotate-5-c {
+	/* css3 animation */
+	
+	-webkit-animation: ani4 5s linear infinite;
+	-moz-animation: ani4 5s linear infinite;
+	-ms-animation: ani4 5s linear infinite;
+	-o-animation: ani4 5s linear infinite;
+	animation: ani4 5s linear infinite;
+}
+/* css3 keyframes - animation 4 */
+
+@-webkit-keyframes ani4 {
+	from {
+		-webkit-transform: rotateZ(0deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(-180deg);
+	}
+	to {
+		-webkit-transform: rotateZ(-360deg);
+	}
+}
+@-moz-keyframes ani4 {
+	from {
+		-moz-transform: rotateZ(0deg);
+	}
+	50% {
+		-moz-transform: rotateZ(-180deg);
+	}
+	to {
+		-moz-transform: rotateZ(-360deg);
+	}
+}
+@-ms-keyframes ani4 {
+	from {
+		-ms-transform: rotateZ(0deg);
+	}
+	50% {
+		-ms-transform: rotateZ(-180deg);
+	}
+	to {
+		-ms-transform: rotateZ(-360deg);
+	}
+}
+@-o-keyframes ani4 {
+	from {
+		-o-transform: rotateZ(0deg);
+	}
+	50% {
+		-o-transform: rotateZ(-180deg);
+	}
+	to {
+		-o-transform: rotateZ(-360deg);
+	}
+}
+@keyframes ani4 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	50% {
+		transform: rotateZ(-180deg);
+	}
+	to {
+		transform: rotateZ(-360deg);
+	}
+}
+.rotate-2-5-c {
+	/* css3 animation */
+	
+	-webkit-animation: anim2-5 2s linear infinite;
+	-moz-animation: anim2-5 2s linear infinite;
+	-ms-animation: anim2-5 2s linear infinite;
+	-o-animation: anim2-5 2s linear infinite;
+	animation: anim2-5 2s linear infinite;
+}
+/* css3 keyframes - animation 4 */
+
+@-webkit-keyframes anim2-5 {
+	from {
+		-webkit-transform: rotateZ(0deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(180deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+@-moz-keyframes anim2-5 {
+	from {
+		-moz-transform: rotateZ(0deg);
+	}
+	50% {
+		-moz-transform: rotateZ(180deg);
+	}
+	to {
+		-moz-transform: rotateZ(360deg);
+	}
+}
+@-ms-keyframes anim2-5 {
+	from {
+		-ms-transform: rotateZ(0deg);
+	}
+	50% {
+		-ms-transform: rotateZ(180deg);
+	}
+	to {
+		-ms-transform: rotateZ(360deg);
+	}
+}
+@-o-keyframes anim2-5 {
+	from {
+		-o-transform: rotateZ(0deg);
+	}
+	50% {
+		-o-transform: rotateZ(180deg);
+	}
+	to {
+		-o-transform: rotateZ(360deg);
+	}
+}
+@keyframes anim2-5 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	50% {
+		transform: rotateZ(180deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+.rotate-1-ac {
+	/* css3 animation */
+	
+	-webkit-animation: ani1 1s linear infinite;
+	-moz-animation: ani1 1s linear infinite;
+	-ms-animation: ani1 1s linear infinite;
+	-o-animation: ani1 1s linear infinite;
+	animation: ani1 1s linear infinite;
+}
+/* css3 keyframes - animation 4 */
+
+@-webkit-keyframes ani1 {
+	from {
+		-webkit-transform: rotateZ(0deg);
+	}
+	50% {
+		-webkit-transform: rotateZ(-180deg);
+	}
+	to {
+		-webkit-transform: rotateZ(-360deg);
+	}
+}
+@-moz-keyframes ani1 {
+	from {
+		-moz-transform: rotateZ(0deg);
+	}
+	50% {
+		-moz-transform: rotateZ(-180deg);
+	}
+	to {
+		-moz-transform: rotateZ(-360deg);
+	}
+}
+@-ms-keyframes ani1 {
+	from {
+		-ms-transform: rotateZ(0deg);
+	}
+	50% {
+		-ms-transform: rotateZ(-180deg);
+	}
+	to {
+		-ms-transform: rotateZ(-360deg);
+	}
+}
+@-o-keyframes ani1 {
+	from {
+		-o-transform: rotateZ(0deg);
+	}
+	50% {
+		-o-transform: rotateZ(-180deg);
+	}
+	to {
+		-o-transform: rotateZ(-360deg);
+	}
+}
+@keyframes ani1 {
+	from {
+		transform: rotateZ(0deg);
+	}
+	50% {
+		transform: rotateZ(-180deg);
+	}
+	to {
+		transform: rotateZ(-360deg);
+	}
+}

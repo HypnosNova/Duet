@@ -1,0 +1,193 @@
+* {
+	padding: 0;
+	margin: 0;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	color: wheat;
+}
+
+body {
+	background-color: #000;
+	overflow: hidden;
+}
+
+#backdiv {
+	background-color: transparent;
+	background-size: cover;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+#leftContainer {
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	width: 0;
+	height: 100%;
+	background-color: transparent;
+	left: -100%;
+}
+
+#rightContainer {
+	/*display: none;*/
+	position: absolute;
+	top: 0;
+	z-index: 20;
+	width: 0;
+	height: 100%;
+	background-color: transparent;
+	right: -100%;
+}
+
+#closeLeftBtn {
+	height: 100%;
+	background-color: transparent;
+	float: left;
+}
+
+#closeRightBtn {
+	height: 100%;
+	background-color: transparent;
+	float: left;
+}
+
+#optionDiv {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	float: left;
+}
+
+#levelDiv {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	float: left;
+}
+
+#optionTitle {
+	color: white;
+	font-family: "微软雅黑";
+}
+
+#controllerD {
+	color: white;
+	font-family: "微软雅黑";
+}
+
+#soundD {
+	color: white;
+	font-family: "微软雅黑";
+}
+
+#imageD {
+	color: white;
+	font-family: "微软雅黑";
+}
+
+#languageD{
+	color: white;
+	font-family: "微软雅黑";
+}
+
+.line {
+	width: 100%;
+	color: white;
+	font-family: "微软雅黑";
+	border-bottom: 1px solid #777;
+}
+
+.line2 {}
+
+.switch {
+	margin-right: 5%;
+	float: right;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+
+.on {
+	color: #4455ff;
+}
+
+.off {
+	color: #ff5544;
+}
+
+#levelTitle {
+	color: white;
+	font-family: "微软雅黑";
+}
+
+.levelName {
+	float: left;
+	text-align: center;
+	color: white;
+	width: 32%;
+	border: 1px solid #fff;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+h1 {
+	height: auto;
+	width: 100%;
+	color: white;
+	font-family: "微软雅黑";
+	text-align: left;
+	font-weight: 100;
+}
+
+h2 {
+	margin-top: 5%;
+	height: auto;
+	width: 100%;
+	color: #aaa;
+	font-family: "微软雅黑";
+	text-align: left;
+	font-weight: 100;
+}
+
+.swiper-pagination-bullet {
+	border-radius: 10%;
+}
+
+.levelBox {
+	background-color: #777;
+	color: #fff;
+	text-align: center;
+	font-family: "微软雅黑";
+	float: left;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.optionText{
+	color:white
+}
+
+.radioSwitch{
+	float:right;
+	margin-right: 5%;
+}
+.switchBg{
+	float:right;
+	margin-right: 5%;
+}

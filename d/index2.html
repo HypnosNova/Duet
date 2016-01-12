@@ -1,0 +1,119 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Swiper demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="swipe.css">
+
+		<!-- Demo styles -->
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: transparent;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #fff;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: transparent;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+			}
+			
+			h1 {
+				width: 100%;
+				color: white;
+				font-family: "微软雅黑";
+				text-align: left;
+				font-weight: 100;
+			}
+			.swiper-pagination-bullet{
+				border-radius: 10%;
+			}
+			
+			.levelBox{
+				background-color: #777;
+				color: #fff;
+				font-size: 50%;
+				text-align: center;
+				font-family: "微软雅黑";
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Swiper -->
+		<div class="swiper-container swiper-container-horizontal">
+			<div class="swiper-wrapper" style="transform: translate3d(-1630px, 0px, 0px); -webkit-transform: translate3d(-1630px, 0px, 0px); transition: 0ms; -webkit-transition: 0ms;">
+				<div class="swiper-slide">
+					<h1>故事</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>尾声</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>加演</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>无尽</h1>
+				</div>
+				<div class="swiper-slide">
+					<h1>速跑</h1>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination-clickable"></div>
+
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="js.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				effect: 'coverflow',
+				grabCursor: true,
+				centeredSlides: true,
+				slidesPerView: 1,
+				paginationClickable: true,
+				coverflow: {
+					rotate: 50,
+					stretch: 0,
+					depth: 100,
+					modifier: 1,
+					slideShadows: false
+				},
+				spaceBetween: 5,
+				loop: true
+			});
+		</script>
+
+	</body>
+
+</html>
