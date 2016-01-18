@@ -65,3 +65,19 @@ Array.prototype.remove = function(n) {
 }
 
 $("#rightContainer").hide()
+
+document.onkeydown = keyDown;  
+function keyDown(event) {  
+	if (event.keyCode == 39||event.keyCode ==68) 
+		onRightDown();
+	if (event.keyCode == 37||event.keyCode ==65) 
+		onLeftDown();
+	
+} 
+document.onkeyup = keyUp;  
+function keyUp(event) {  
+	if (event.keyCode == 39||event.keyCode ==68) 
+		onRightUp();
+	if (event.keyCode == 37||event.keyCode ==65) 
+		onLeftUp();
+} 

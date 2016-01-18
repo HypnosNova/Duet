@@ -1,4 +1,4 @@
-var quality=2;
+var quality=1;
 var sceneX=900/quality;
 var sceneY=1600/quality;
 var clockwise=0;

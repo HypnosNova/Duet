@@ -52,24 +52,24 @@ geminiContainer.y = (sceneY - sceneX) + (sceneX - geminiContainerWidth) / 2;
 geminiContainer.width = geminiContainerWidth;
 geminiContainer.height = geminiContainerWidth;
 
-var circleBack = new PIXI.Graphics();
-circleBack.lineStyle(4, 0xFFFFFF, 1);
-circleBack.beginFill(0x000000, 1);
-circleBack.drawCircle(geminiContainerWidth / 2, geminiContainerWidth / 2, circleBackWidth / 2);
-circleBack.endFill();
-
-circleBack.lineStyle(0, 0xFFFFFF, 1);
-circleBack.beginFill(0xff0000, 1);
-circleBack.drawCircle(ballWidth / 2 + 2, geminiContainerWidth / 2, ballWidth / 2);
-circleBack.endFill();
-
-circleBack.lineStyle(0, 0xFFFFFF, 1);
-circleBack.beginFill(0x0000ff, 1);
-circleBack.drawCircle(geminiContainerWidth - ballWidth / 2 - 2, geminiContainerWidth / 2, ballWidth / 2);
-circleBack.endFill();
-
-//stage.addChild(geminiContainer);
-geminiContainer.addChild(circleBack);
+//var circleBack = new PIXI.Graphics();
+//circleBack.lineStyle(4, 0xFFFFFF, 1);
+//circleBack.beginFill(0x000000, 1);
+//circleBack.drawCircle(geminiContainerWidth / 2, geminiContainerWidth / 2, circleBackWidth / 2);
+//circleBack.endFill();
+//
+//circleBack.lineStyle(0, 0xFFFFFF, 1);
+//circleBack.beginFill(0xff0000, 1);
+//circleBack.drawCircle(ballWidth / 2 + 2, geminiContainerWidth / 2, ballWidth / 2);
+//circleBack.endFill();
+//
+//circleBack.lineStyle(0, 0xFFFFFF, 1);
+//circleBack.beginFill(0x0000ff, 1);
+//circleBack.drawCircle(geminiContainerWidth - ballWidth / 2 - 2, geminiContainerWidth / 2, ballWidth / 2);
+//circleBack.endFill();
+//
+////stage.addChild(geminiContainer);
+//geminiContainer.addChild(circleBack);
 var obj = PIXI.Sprite.fromImage('img/c' + quality + '.png'); //("img/icon.png")//
 obj.anchor.x = 0.5;
 obj.anchor.y = 0.5;

@@ -9,7 +9,8 @@ function changeLanguage(languageName) {
 	} else if (languageName == "tradition") {
 		languageMap = tradition;
 	}
-	reflashLanguage()
+	currentLanguage=languageName;
+	reflashLanguage();
 }
 
 function reflashLanguage(){

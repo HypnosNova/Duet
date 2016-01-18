@@ -12,7 +12,7 @@ var level = [
 	//--------------------------------------------------level 1
 	[{
 		shape: "word",
-		text: languageMap.niceToMeetYou,
+		text: "languageMap.niceToMeetYou",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,
@@ -57,7 +57,7 @@ var level = [
 	//-----------------------------------------------level 2
 	[{
 		shape: "word",
-		text: languageMap.thinkCircle,
+		text: "languageMap.thinkCircle",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,
@@ -120,7 +120,7 @@ var level = [
 	//-----------------------------------------------level 3
 	[{
 		shape: "word",
-		text: languageMap.notDifficult,
+		text: "languageMap.notDifficult",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,
@@ -133,46 +133,46 @@ var level = [
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -1060
+		y: -1000
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -2030
+		y: -1960
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -3015
+		y: -2920
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -3500
+		y: -3400
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -3985
+		y: -3880
 	}, {
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -4470
+		y: -4360
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -4955
+		y: -4840
 	},{
 		prefect:1,
-		passTime:880,
+		passTime:860,
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/12*5,
@@ -183,7 +183,7 @@ var level = [
 	//-----------------------------------------------level 4
 	[{
 		shape: "word",
-		text: languageMap.neverGiveUp,
+		text: "languageMap.neverGiveUp",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,
@@ -264,7 +264,7 @@ var level = [
 	//-----------------------------------------------level 5
 	[{
 		shape: "word",
-		text: languageMap.striveFor,
+		text: "languageMap.striveFor",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,
@@ -345,7 +345,7 @@ var level = [
 	//-----------------------------------------------level 6
 	[{
 		shape: "word",
-		text: languageMap.striveFor,
+		text: "languageMap.striveFor",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,
@@ -358,11 +358,318 @@ var level = [
 		width: 480,
 		height: 80,
 		x: 450,
-		y: -1060,
+		y: -880,
+		speedY:6,
 		speedR:Math.PI/60
 	},{
+		prefect:1,
+		passTime:470,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//-----------------------------------------------level 7
+	[{
+		shape: "word",
+		text: "languageMap.beCareful",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 280,
+		y: -930,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -1220,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 620,
+		y: -2250,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -2540,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 600,
+		y: -3350,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 280,
+		y: -3850,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -4140,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 280,
+		y: -4950,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 280,
+		y: -5430,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -5720,
+		speedY:8,
+	},{
 		prefect:5,
-		passTime:930,
+		passTime:950,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//-----------------------------------------------level 8
+	[{
+		shape: "word",
+		text: "languageMap.believeYourScense",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -880,
+		speedY:6,
+		speedR:-Math.PI/60
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -1620,
+		speedY:6,
+		speedR:Math.PI/60
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -2360,
+		speedY:6,
+		speedR:-Math.PI/60
+	},{
+		prefect:3,
+		passTime:720,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//-----------------------------------------------level 9
+	[{
+		shape: "word",
+		text: "languageMap.alwaysChange",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1000,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1480,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 230,
+		height: 230,
+		x: 275,
+		y: -1980,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 230,
+		height: 230,
+		x: 625,
+		y: -2500,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3000,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3480,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3960,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -4440,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -4730,
+		speedY:8,
+	},{
+		prefect:4,
+		passTime:820,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//-----------------------------------------------level 10
+	[{
+		shape: "word",
+		text: "languageMap.dontDeny",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1000,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -1280,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1850,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -2130,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 230,
+		height: 230,
+		x: 625,
+		y: -2680,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 230,
+		height: 230,
+		x: 275,
+		y: -3200,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -3750,
+		rotation:-Math.PI/2,
+		speedY:8,
+		speedR:Math.PI/50
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -4250,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -4530,
+		speedY:8,
+	},{
+		prefect:5,
+		passTime:810,
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/12*5,
