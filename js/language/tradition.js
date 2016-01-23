@@ -8,6 +8,12 @@ var tradition={
 	believeYourScense:"相信妳的直覺",
 	alwaysChange:"變化為常態",
 	dontDeny:"不要否認它",
+	butWelcomeIt:"要歡迎它",
+	angryChoose:"憤怒可能會讓某些選擇\n更加容易",
+	anyMod:"任何模式都有跡可循，\n即使在混亂中",
+	dontLimit:"不要受其限制",
+	helpShackle:"讓它幫助妳脫離束縛",
+	cantGetFish:"重複相同的動作，\n但希望有不同的結果，\n這無異於緣木求魚",
 	prefect:"完美",
 	thinkCircle:"妳需要循環思考",
 	close:"關閉",
@@ -24,5 +30,7 @@ var tradition={
 	level:"關卡",
 	story:"故事",
 	unknow:"無知",
+	deny:"否定",
+	anger:"憤怒",
 	switch:"切換"
 }
