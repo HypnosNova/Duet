@@ -8,6 +8,12 @@ var chinese={
 	believeYourScense:"相信你的直觉",
 	alwaysChange:"变化为常态",
 	dontDeny:"不要否认它",
+	butWelcomeIt:"要欢迎它",
+	angryChoose:"愤怒可能会让某些选择\n更加容易",
+	anyMod:"任何模式都有迹可循，\n即使在混乱中",
+	dontLimit:"不要受其限制",
+	helpShackle:"让它帮助你脱离束缚",
+	cantGetFish:"重复同样的动作，\n但希望有不同的结果，\n这无异于缘木求鱼",
 	prefect:"完美",
 	thinkCircle:"你需要循环思考",
 	close:"关闭",
@@ -24,6 +30,8 @@ var chinese={
 	level:"关卡",
 	story:"故事",
 	unknow:"无知",
+	deny:"否定",
+	anger:"愤怒",
 	switch:"切换",
 	
 }
