@@ -8,7 +8,13 @@ var english={
 	believeYourScense:"Believe your intuition",
 	alwaysChange:"Transformation is usual",
 	dontDeny:"Don't deny it",
-	prefect:"Prefect",
+	butWelcomeIt:"But welcome it",
+	angryChoose:"Sometimes anger will make\nchoices easier",
+	anyMod:"Any pattern has a trace,\neven in chaos",
+	dontLimit:"Don't be limited by it",
+	helpShackle:"Let it help you to\nget out of bondage",
+	cantGetFish:"Repeat the same actions\nto wish for different result,\nit's a fruitless approach",
+	prefect:"Perfect",
 	thinkCircle:"You should think circlely",
 	close:"OFF",
 	open:"ON",
@@ -24,5 +30,7 @@ var english={
 	level:"Levels",
 	story:"Story",
 	unknow:"Ignorance",
+	deny:"Deny",
+	anger:"Anger",
 	switch:"Switch"
 }
