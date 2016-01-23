@@ -45,9 +45,15 @@ function animate() {
 					}
 				}
 				for (var i = 0; i < mapLevel.length - 1; i++) {
+					//3个不同速度
 					levelGraphics[i].x += mapLevel[i].speedX / quality || mapLevel[i].prototype.speedX / quality;
 					levelGraphics[i].y += mapLevel[i].speedY / quality || mapLevel[i].prototype.speedY / quality;
 					levelGraphics[i].rotation += mapLevel[i].speedR || mapLevel[i].prototype.speedR;
+					//是否存在特殊动作
+					if(levelGraphics[i].special){
+						levelGraphics[i].special();
+					}
+					
 					if (levelGraphics[i].y > sceneY / 3 && mapLevel[i].shape != "word") {
 						if (isTouch(levelGraphics[i])) {
 							if(isOpenSoundEffect)ion.sound.play("touch");
