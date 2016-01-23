@@ -676,6 +676,762 @@ var level = [
 		timeShow:50,
 		timeHold:150,
 		timeHide:100
+	}],
+	//-----------------------------------------------level 11
+	[{
+		shape: "word",
+		text: "languageMap.butWelcomeIt",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -1000,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -1280,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -1840,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -2360,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -2640,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -3240,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -3520,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -4130,
+		speedY:8,
+		rotation:-Math.PI/2.7,
+		speedR:Math.PI/50
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -4600,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -5100,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -5380,
+		speedY:8,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -6000,
+		speedY:8,
+		speedR:-Math.PI/50,
+		rotation:-Math.PI/20
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -6450,
+		speedY:8,
+	},{
+		prefect:8,
+		passTime:1050,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 12
+	[{
+		shape: "word",
+		text: "languageMap.angryChoose",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1000,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -1960,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -1960,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -2920,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3880,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -3880,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	},{
+		prefect:4,
+		passTime:750,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 13
+	[{
+		shape: "word",
+		text: "languageMap.anyMod",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -1480,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1480,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -2440,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -2440,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3400,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3400,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -4360,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -4360,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -5320,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -5320,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -6280,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -6280,
+	},{
+		prefect:5,
+		passTime:1010,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 14
+	[{
+		shape: "word",
+		text: "languageMap.dontLimit",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -1480,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -1480,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -2440,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -2440,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3400,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -3400,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -4360,
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -4360,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -5320,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -5320,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -6280,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -6280,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -7240,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -7240,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -8000,
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -8200,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		},
+	},{
+		prefect:6,
+		passTime:1220,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 15
+	[{
+		shape: "word",
+		text: "languageMap.helpShackle",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -1480
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -1480,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -2440
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -2440,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -3400,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -3400
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -4360
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -4360,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -5320
+	},{
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -5320,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -5920
+	},{
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 140,
+		y: -6200
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -7160,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -7160
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -8120,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -8120
+	}, {
+		prefect:9,
+		passTime:1240,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 16
+	[{
+		shape: "word",
+		text: "languageMap.cantGetFish",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -1000
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -1480
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -2440,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -2440
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -2985,
+		speedR:-Math.PI/50,
+		rotation:Math.PI/2
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -4020,
+		special:function(){
+			if(this.y>000&&this.y<960){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -3820
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -4350
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -4850
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -5400,
+		speedR:-Math.PI/50,
+		rotation:-Math.PI/2
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -5920
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -6440
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 630,
+		y: -7020
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -8000,
+		special:function(){
+			if(this.y>200&&this.y<1160){
+				this.y+=8;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -8000
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 270,
+		y: -8500
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -8780
+	}, {
+		prefect:12,
+		passTime:1350,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
 	}]
-
 ]
