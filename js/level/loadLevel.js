@@ -26,6 +26,11 @@ function drawLevel(levelMap) {
 			graphic.beginFill(levelMap[i].color || levelMap[i].prototype.color, 1);
 			//_______________________绘图位置
 			graphic.drawRect(-levelMap[i].width / quality / 2, -levelMap[i].height / quality / 2, levelMap[i].width / quality, levelMap[i].height / quality);
+			//添加特殊动作
+			if(levelMap[i].special){
+				graphic.special=levelMap[i].special;
+			}
+			
 			levelGraphics.push(graphic);
 		} else if (levelMap[i].shape == "word") {
 			var text = new PIXI.Text(eval(levelMap[i].text), {
