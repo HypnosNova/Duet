@@ -160,7 +160,7 @@ versionText.y = 1400 / quality;
 stage.addChild(versionText);
 
 var prefecttext = new PIXI.Text(languageMap.prefect, {
-	font: 60 / quality + 'px 微软雅黑',
+	font: 100 / quality + 'px 微软雅黑',
 	fill: '#ffffff',
 	stroke: '#ffffff',
 	strokeThickness: 0,
