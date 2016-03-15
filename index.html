@@ -175,9 +175,6 @@
 		$(".levelBox").bind("click", function() {
 			var levelNum = $(this).attr("level");
 			startGameLevel(levelNum);
-		}).bind("touchstart", function() {
-			var levelNum = $(this).attr("level");
-			startGameLevel(levelNum);
 		})
 
 		function startGameLevel(levelNum) {
