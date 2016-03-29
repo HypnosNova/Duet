@@ -100,7 +100,7 @@ optionBtn.y = 1400 / quality;
 optionBtn.timeChange = 40;
 optionBtn.interactive = true;
 optionBtn.on('click', showOption);//mousedown
-optionBtn.on('touch', showOption);
+optionBtn.on('touchend', showOption);
 stage.addChild(optionBtn);
 
 var startBtn = PIXI.Sprite.fromImage('img/start' + quality + '.png');
@@ -111,7 +111,7 @@ startBtn.y = 1400 / quality;
 startBtn.timeChange = 40;
 startBtn.interactive = true;
 startBtn.on('click', showLevel);
-startBtn.on('touch', showLevel);
+startBtn.on('touchend', showLevel);
 stage.addChild(startBtn);
 
 var pauseBtn = PIXI.Sprite.fromImage('img/pause' + quality + '.png');
@@ -122,7 +122,7 @@ pauseBtn.y = 80 / quality;
 pauseBtn.timeChange = 40;
 pauseBtn.interactive = true;
 pauseBtn.on('click', pauseGame);
-pauseBtn.on('touch', pauseGame);
+pauseBtn.on('touchend', pauseGame);
 
 
 var exitBtn = PIXI.Sprite.fromImage('img/exitBtn' + quality + '.png');
@@ -133,7 +133,7 @@ exitBtn.y = 1400 / quality;
 exitBtn.timeChange = 40;
 exitBtn.interactive = true;
 exitBtn.on('click', exitGame);
-exitBtn.on('touch', exitGame);
+exitBtn.on('touchend', exitGame);
 //stage.addChild(pauseBtn);
 
 var continueBtn = PIXI.Sprite.fromImage('img/start' + quality + '.png');
@@ -144,7 +144,7 @@ continueBtn.y = 1400 / quality;
 continueBtn.timeChange = 40;
 continueBtn.interactive = true;
 continueBtn.on('click', continueGame);
-continueBtn.on('touch', continueGame);
+continueBtn.on('touchend', continueGame);
 
 var versionText = new PIXI.Text("Ver 0.1", {
 	font: 100 / quality + 'px gulim',
