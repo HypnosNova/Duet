@@ -9,12 +9,12 @@ function resize() {
 	$("#backdiv").css("height", window.innerHeight + "px");
 	$("#backdiv").css("width", window.innerHeight / 16 * 9 + "px");
 	$("#backdiv").css("margin-left", window.innerWidth / 2 - window.innerHeight / 32 * 9 + "px");
-	$("#leftContainer").css("width", window.innerHeight / 16 * 9 + "px").css("left", -window.innerHeight / 16 * 9 + "px");
-	$("#rightContainer").css("width", window.innerHeight / 16 * 9 + "px").css("right", -window.innerHeight / 16 * 9 + "px");
+	$("#leftContainer").css("width", window.innerWidth + "px").css("left", -window.innerHeight / 16 * 9 + "px");
+	$("#rightContainer").css("width", window.innerWidth + "px").css("right", -window.innerHeight / 16 * 9 + "px");
 	$("#optionDiv").css("width", window.innerHeight / 16 * 7 + "px");
 	$("#levelDiv").css("width", window.innerHeight / 16 * 7 + "px");
-	$("#closeLeftBtn").css("width", window.innerHeight / 16 * 2 + "px");
-	$("#closeRightBtn").css("width", window.innerHeight / 16 * 2 + "px");
+	$("#closeLeftBtn").css("width", window.innerWidth - window.innerHeight / 16 * 7 + "px");
+	$("#closeRightBtn").css("width", window.innerWidth - window.innerHeight / 16 * 7 + "px");
 	$("#optionTitle").css("font-size", window.innerHeight / 85 * 7 + "px");
 	$("#controllerD").css("font-size", window.innerHeight / 170 * 7 + "px");
 	$(".line").css("font-size", window.innerHeight / 30 + "px");
