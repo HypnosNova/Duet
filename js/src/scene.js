@@ -2,7 +2,7 @@ var isMouseDown = false;
 var isDoubleDown = false;
 var clockwise = 0;
 
-var renderer = PIXI.autoDetectRenderer(sceneX, sceneY, {
+var renderer = PIXI.autoDetectRenderer(window.innerWidth/scale/quality, sceneY, {
 	transparent: true
 });
 document.body.appendChild(renderer.view);
@@ -10,7 +10,7 @@ var stage = new PIXI.Container();
 
 var pattern = Trianglify({
 	height: 1600/quality,
-	width: 900/quality,
+	width: window.innerWidth/scale/quality,
 	cell_size: 30 + Math.random() * 100
 })
 var background = PIXI.Sprite.fromImage(pattern.png());
@@ -24,7 +24,7 @@ var rightbtn = PIXI.Sprite.fromImage('');
 
 leftbtn.position.x = 0;
 leftbtn.position.y = 0;
-leftbtn.width = objInitX;
+leftbtn.width = btnWidth;
 leftbtn.height = sceneY;
 leftbtn.interactive = true;
 leftbtn.on('mousedown', onLeftDown);
@@ -32,9 +32,9 @@ leftbtn.on('touchstart', onLeftDown);
 leftbtn.on('mouseup', onLeftUp);
 leftbtn.on('touchend', onLeftUp);
 
-rightbtn.position.x = objInitX;
+rightbtn.position.x = btnWidth;
 rightbtn.position.y = 0;
-rightbtn.width = objInitX;
+rightbtn.width = btnWidth;
 rightbtn.height = sceneY;
 rightbtn.interactive = true;
 rightbtn.on('mousedown', onRightDown);
@@ -47,7 +47,7 @@ stage.addChild(rightbtn);
 
 var geminiContainer = new PIXI.Container();
 //geminiContainer.anchor(0.5)
-geminiContainer.x = (sceneX - geminiContainerWidth) / 2;
+geminiContainer.x = (sceneX - geminiContainerWidth) / 2 +marginLeft;
 geminiContainer.y = (sceneY - sceneX) + (sceneX - geminiContainerWidth) / 2;
 geminiContainer.width = geminiContainerWidth;
 geminiContainer.height = geminiContainerWidth;
@@ -73,7 +73,7 @@ geminiContainer.height = geminiContainerWidth;
 var obj = PIXI.Sprite.fromImage('img/c' + quality + '.png'); //("img/icon.png")//
 obj.anchor.x = 0.5;
 obj.anchor.y = 0.5;
-obj.position.x = objInitX;
+obj.position.x = objInitX+marginLeft;
 obj.position.y = objInitY; //(sceneY - sceneX) + (sceneX) / 2;
 
 stage.addChild(obj);
@@ -88,63 +88,63 @@ var logoText = new PIXI.Text("DUET", {
 });
 logoText.anchor.x = 0.5;
 logoText.anchor.y = 0.5;
-logoText.x = objInitX;
+logoText.x = objInitX+marginLeft;
 logoText.y = 190 / quality;
 stage.addChild(logoText);
 
 var optionBtn = PIXI.Sprite.fromImage('img/option' + quality + '.png');
 optionBtn.anchor.x = 0.5;
 optionBtn.anchor.y = 0.5;
-optionBtn.x = 150 / quality;
+optionBtn.x = 150 / quality+marginLeft;
 optionBtn.y = 1400 / quality;
 optionBtn.timeChange = 40;
 optionBtn.interactive = true;
-optionBtn.on('mousedown', showOption);
-optionBtn.on('touchstart', showOption);
+optionBtn.on('click', showOption);//mousedown
+//optionBtn.on('touchstart', showOption);-------------------------
 stage.addChild(optionBtn);
 
 var startBtn = PIXI.Sprite.fromImage('img/start' + quality + '.png');
 startBtn.anchor.x = 0.5;
 startBtn.anchor.y = 0.5;
-startBtn.x = 750 / quality;
+startBtn.x = 750 / quality+marginLeft;
 startBtn.y = 1400 / quality;
 startBtn.timeChange = 40;
 startBtn.interactive = true;
-startBtn.on('mousedown', showLevel);
-startBtn.on('touchstart', showLevel);
+startBtn.on('click', showLevel);
+//startBtn.on('touchstart', showLevel);
 stage.addChild(startBtn);
 
 var pauseBtn = PIXI.Sprite.fromImage('img/pause' + quality + '.png');
 pauseBtn.anchor.x = 0.5;
 pauseBtn.anchor.y = 0.5;
-pauseBtn.x = 820 / quality;
+pauseBtn.x = 820 / quality+marginLeft;
 pauseBtn.y = 80 / quality;
 pauseBtn.timeChange = 40;
 pauseBtn.interactive = true;
-pauseBtn.on('mousedown', pauseGame);
-pauseBtn.on('touchstart', pauseGame);
+pauseBtn.on('click', pauseGame);
+//pauseBtn.on('touchstart', pauseGame);
 
 
 var exitBtn = PIXI.Sprite.fromImage('img/exitBtn' + quality + '.png');
 exitBtn.anchor.x = 0.5;
 exitBtn.anchor.y = 0.5;
-exitBtn.x = 150 / quality;
+exitBtn.x = 150 / quality+marginLeft;
 exitBtn.y = 1400 / quality;
 exitBtn.timeChange = 40;
 exitBtn.interactive = true;
-exitBtn.on('mousedown', exitGame);
-exitBtn.on('touchstart', exitGame);
+exitBtn.on('click', exitGame);
+//exitBtn.on('touchstart', exitGame);
 //stage.addChild(pauseBtn);
 
 var continueBtn = PIXI.Sprite.fromImage('img/start' + quality + '.png');
 continueBtn.anchor.x = 0.5;
 continueBtn.anchor.y = 0.5;
-continueBtn.x = 750 / quality;
+continueBtn.x = 750 / quality+marginLeft;
 continueBtn.y = 1400 / quality;
 continueBtn.timeChange = 40;
 continueBtn.interactive = true;
-continueBtn.on('mousedown', continueGame);
-continueBtn.on('touchstart', continueGame);
+continueBtn.on('click', continueGame);
+//continueBtn.on('touchstart', continueGame);
 
 var versionText = new PIXI.Text("Ver 0.1", {
 	font: 100 / quality + 'px gulim',
@@ -155,7 +155,7 @@ var versionText = new PIXI.Text("Ver 0.1", {
 });
 versionText.anchor.x = 0.5;
 versionText.anchor.y = 0.5;
-versionText.x = objInitX;
+versionText.x = objInitX+marginLeft;
 versionText.y = 1400 / quality;
 stage.addChild(versionText);
 
@@ -168,7 +168,7 @@ var prefecttext = new PIXI.Text(languageMap.prefect, {
 });
 prefecttext.anchor.x = 0.5;
 prefecttext.anchor.y = 0.5;
-prefecttext.x = objInitX;
+prefecttext.x = objInitX+marginLeft;
 prefecttext.y = objInitX / 3;
 prefecttext.alpha = 0;
 
@@ -265,6 +265,9 @@ function cancelOneClick(isClockwise) {
 }
 
 function showOption(eventData) {
+	if(optionBtn.alpha<0.99){
+		return;
+	}
 	showMenu = 1;
 	optionBtn.alpha = 1;
 	startBtn.alpha = 1;
@@ -277,6 +280,9 @@ function showOption(eventData) {
 }
 
 function showLevel(eventData) {
+	if(startBtn.alpha<0.99){
+		return;
+	}
 	showMenu = 1;
 	optionBtn.alpha = 1;
 	startBtn.alpha = 1;
@@ -336,7 +342,7 @@ function exitGame() {
 	closeLevel();
 	stage.addChild(logoText);
 	stage.addChild(versionText);
-	obj.position.x = objInitX;
+	obj.position.x = objInitX+marginLeft;
 	obj.position.y = objInitY;
 }
 

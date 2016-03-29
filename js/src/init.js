@@ -1,26 +1,11 @@
 window.onresize = resize;
-var swiper = new Swiper('.swiper-container', {
-	pagination: '.swiper-pagination',
-	effect: 'coverflow',
-	grabCursor: true,
-	centeredSlides: true,
-	slidesPerView: 1,
-	paginationClickable: true,
-	coverflow: {
-		rotate: 50,
-		stretch: 0,
-		depth: 100,
-		modifier: 1,
-		slideShadows: false
-	},
-	spaceBetween: 5,
-	loop: true
-});
 
 function resize() {
 	$("canvas").css("height", window.innerHeight + "px");
-	$("canvas").css("width", window.innerHeight / 16 * 9 + "px");
-	$("canvas").css("left", window.innerWidth / 2 - window.innerHeight / 32 * 9 + "px");
+	$("canvas").css("width", window.innerWidth + "px");
+	$("canvas").css("left", 0 + "px");
+	//$("canvas").css("width", window.innerHeight / 16 * 9 + "px");
+	//$("canvas").css("left", window.innerWidth / 2 - window.innerHeight / 32 * 9 + "px");
 	$("#backdiv").css("height", window.innerHeight + "px");
 	$("#backdiv").css("width", window.innerHeight / 16 * 9 + "px");
 	$("#backdiv").css("margin-left", window.innerWidth / 2 - window.innerHeight / 32 * 9 + "px");
@@ -46,23 +31,30 @@ function resize() {
 	$(".swiper-pagination-bullet").css("width", window.innerHeight / 16 + "px").css("height", window.innerHeight / 120 + "px");
 	$("#pagination").css("top", 0 + "px").css("height", window.innerHeight / 60 + "px");
 	$(".swiper-wrapper").css("margin-top", window.innerHeight / 24 + "px").css("height",window.innerHeight *20/ 24 + "px");
-	$(".levelBox").css("width", window.innerHeight / 10 + "px").css("height", window.innerHeight / 10 + "px").css("margin-top", window.innerHeight / 34 + "px").css("line-height", window.innerHeight / 10 + "px").css("font-size", window.innerHeight / 20 + "px");
+	$(".levelBox").css("width", window.innerHeight / 10 + "px").css("height", window.innerHeight / 10 + "px").css("margin-top", window.innerHeight / 34 + "px").css("margin-right", window.innerHeight / 34 + "px").css("line-height", window.innerHeight / 10 + "px").css("font-size", window.innerHeight / 20 + "px");
 }
 resize();
-
-//var pattern = Trianglify({
-//		height: window.innerHeight,
-//		width: window.innerWidth,
-//		cell_size: 30 + Math.random() * 100
-//	})
-//	//console.log(pattern.png())
-//	// svg
-//$("body").css("background-image", "url(" + pattern.png() + ")");
-
 Array.prototype.remove = function(n) {
 	if (n < 0) return this;
 	return this.slice(0, n).concat(this.slice(n + 1, this.length));
 }
+var swiper = new Swiper('.swiper-container', {
+	pagination: '.swiper-pagination',
+	effect: 'coverflow',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 1,
+	paginationClickable: true,
+	coverflow: {
+		rotate: 50,
+		stretch: 0,
+		depth: 100,
+		modifier: 1,
+		slideShadows: false
+	},
+	spaceBetween: 5,
+	loop: true
+});
 
 $("#rightContainer").hide()
 
@@ -81,3 +73,4 @@ function keyUp(event) {
 	if (event.keyCode == 37||event.keyCode ==65) 
 		onLeftUp();
 } 
+

@@ -1,0 +1,32 @@
+{
+	"index.html": {
+		"resources": [
+			"js/src/static.js",
+			"js/trianglify/trianglify.min.js",
+			"img/option1.png",
+			"js/level/level.js",
+			"js/language/tradition.js",
+			"js/src/sound.js",
+			"css/animate.css",
+			"js/swiper.min.js",
+			"js/jquery-2.1.0.js",
+			"js/src/animate.js",
+			"media/prefect.mp3",
+			"img/c1.png",
+			"js/pixi.min.js",
+			"img/exitBtn1.png",
+			"img/pause1.png",
+			"js/src/scene.js",
+			"js/src/init.js",
+			"js/level/loadLevel.js",
+			"js/language/english.js",
+			"js/language/languageLoad.js",
+			"css/style.css",
+			"d/swipe.css",
+			"js/language/chinese.js",
+			"img/start1.png",
+			"media/touch.mp3",
+			"js/ion.sound.min.js"
+		]
+	}
+}

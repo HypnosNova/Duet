@@ -37,6 +37,7 @@ function reflashLanguage() {
 	$("#story").text(languageMap.story);
 	$("#deny").text(languageMap.deny);
 	$("#anger").text(languageMap.anger);
+	$("#discuss").text(languageMap.discuss);
 	prefecttext = new PIXI.Text(languageMap.prefect, {
 		font: 100 / quality + 'px 微软雅黑',
 		fill: '#ffffff',
@@ -46,7 +47,7 @@ function reflashLanguage() {
 	});
 	prefecttext.anchor.x = 0.5;
 	prefecttext.anchor.y = 0.5;
-	prefecttext.x = objInitX;
+	prefecttext.x = objInitX+marginLeft;
 	prefecttext.y = objInitX / 3;
 	prefecttext.alpha = 0;
 }

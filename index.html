@@ -31,7 +31,6 @@
 				<br/>
 				<div id="languageD">
 					语言</div>
-				<!--<div class="line">&nbsp;&nbsp;背景图片<span class="switch on">开启</span></div>-->
 				<div class="line">&nbsp;<span class="radioSwitch on" langangename="chinese">简体中文</span></div>
 				<div class="line">&nbsp;<span class="radioSwitch off" langangename="tradition">繁體中文</span></div>
 				<div class="line">&nbsp;<span class="radioSwitch off" langangename="english">English</span></div>
@@ -46,7 +45,7 @@
 					<div class="swiper-container swiper-container-horizontal">
 						<div class="swiper-pagination swiper-pagination-clickable" id="pagination"></div>
 						<div class="swiper-wrapper">
-							<div class="swiper-slide" style="overflow-y: scroll;">
+							<div class="swiper-slide" style="overflow-y: scroll;overflow-x:hidden">
 								<table style="width:75%;margin-left: 5%;">
 									<tr>
 										<td colspan="3">
@@ -133,6 +132,33 @@
 										<td>
 										</td>
 									</tr>
+									<tr>
+										<td colspan="3">
+											<h2 id="discuss">商谈</h2>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="16">I</div>
+										</td>
+										<td>
+											<div class="levelBox" level="17">II</div>
+										</td>
+										<td>
+											<div class="levelBox" level="18">III</div>
+										</td>
+									</tr>
+									<tr class="boxTd">
+										<td>
+											<div class="levelBox" level="19">IV</div>
+										</td>
+										<td>
+											<div class="levelBox" level="20">V</div>
+										</td>
+										<td>
+											<div class="levelBox" level="21">VI</div>
+										</td>
+									</tr>
 								</table>
 
 							</div>
@@ -155,6 +181,7 @@
 		</div>
 		<!--<audio src="" autoplay="autoplay" id="backgroundMusic"></audio>-->
 	</body>
+	<script src="js/src/static.js"></script>
 	<script src="js/jquery-2.1.0.js"></script>
 	<script src="js/ion.sound.min.js"></script>
 	<script src="js/src/sound.js"></script>
@@ -164,7 +191,6 @@
 	<script src="js/language/english.js"></script>
 	<script src="js/language/languageLoad.js"></script>
 	<script src="js/trianglify/trianglify.min.js"></script>
-	<script src="js/src/static.js"></script>
 	<script src="js/pixi.min.js"></script>
 	<script src="js/src/scene.js"></script>
 	<script src="js/src/init.js"></script>
@@ -202,7 +228,7 @@
 		$("#changeBackground").click(function() {
 			var pattern = Trianglify({
 				height: 1600 / quality,
-				width: 900 / quality,
+				width: window.innerWidth/scale/quality,
 				cell_size: 30 + Math.random() * 100
 			})
 			background.texture = PIXI.Texture.fromImage(pattern.png());

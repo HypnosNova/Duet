@@ -1433,5 +1433,145 @@ var level = [
 		timeShow:50,
 		timeHold:150,
 		timeHide:100
+	}],
+	//--------------------------------------------------level 17
+	[{
+		shape: "word",
+		text: "languageMap.thisAlsoProveYou",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 820,
+		y: -880,
+		rotation:-Math.PI/2,
+		speedY:6,
+		speedR:-Math.PI/240
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 80,
+		y: -2220,
+		rotation:Math.PI/2,
+		speedY:6,
+		speedR:Math.PI/240
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 270,
+		y: -3560,
+		rotation:-Math.PI/2,
+		speedY:6,
+		speedR:-Math.PI/240
+	}, {
+		prefect:3,
+		passTime:960,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 18
+	[{
+		shape: "word",
+		text: "languageMap.youKnowSpilledWater",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 820,
+		y: -880,
+		rotation:-Math.PI/2,
+		speedY:6,
+		speedR:-Math.PI/240
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 480,
+		y: -1500,
+		rotation:Math.PI/2,
+		speedY:6,
+		speedR:-Math.PI/60
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -2020,
+		speedY:6,
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -2400,
+		speedY:6,
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 480,
+		y: -2820,
+		rotation:Math.PI/4,
+		speedY:6,
+		speedR:-Math.PI/60
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 600,
+		y: -3500,
+		speedY:6,
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 600,
+		y: -3880,
+		speedY:6,
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 600,
+		y: -4260,
+		speedY:6,
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 480,
+		y: -4660,
+		rotation:-Math.PI/4,
+		speedY:6,
+		speedR:Math.PI/60
+	}, {
+		prefect:4,
+		passTime:1100,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
 	}]
 ]

@@ -14,6 +14,8 @@ var chinese={
 	dontLimit:"不要受其限制",
 	helpShackle:"让它帮助你脱离束缚",
 	cantGetFish:"重复同样的动作，\n但希望有不同的结果，\n这无异于缘木求鱼",
+	thisAlsoProveYou:"这也证明你是肉眼凡胎",
+	youKnowSpilledWater:"你知道覆水难收的道理",
 	prefect:"完美",
 	thinkCircle:"你需要循环思考",
 	close:"关闭",
@@ -33,5 +35,5 @@ var chinese={
 	deny:"否定",
 	anger:"愤怒",
 	switch:"切换",
-	
+	discuss:"商谈",
 }

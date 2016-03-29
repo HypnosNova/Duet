@@ -1,4 +1,10 @@
 var quality=1;
+
+var scale=window.innerHeight/1600;
+var btnWidth=window.innerWidth/scale/2/quality;
+
+var marginLeft=(window.innerWidth/scale/quality-900/quality)/2
+
 var sceneX=900/quality;
 var sceneY=1600/quality;
 var clockwise=0;

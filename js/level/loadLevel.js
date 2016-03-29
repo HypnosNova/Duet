@@ -42,14 +42,14 @@ function drawLevel(levelMap) {
 			});
 			text.anchor.x = 0.5;
 			text.anchor.y = 0.5;
-			text.x = levelMap[i].x;
+			text.x = levelMap[i].x+marginLeft;
 			text.y = levelMap[i].y;
 			text.alpha = 0;
 			stage.addChild(text);
 			levelGraphics.push(text);
 			continue;
 		}
-		graphic.x = levelMap[i].x / quality || levelMap[i].prototype.x / quality;
+		graphic.x = levelMap[i].x+marginLeft / quality || levelMap[i].prototype.x / quality;
 		graphic.y = levelMap[i].y / quality || levelMap[i].prototype.y / quality;
 		graphic.rotation = levelMap[i].rotation || levelMap[i].prototype.rotation;
 
@@ -70,7 +70,7 @@ function clearLevel() {
 }
 
 function isTouch(graphic) {
-	var x = objInitX;
+	var x = objInitX+marginLeft;
 	var y = obj.position.y;
 	var angle = Math.PI - obj.rotation;
 	if (graphic.rotation == 0) {

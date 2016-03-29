@@ -16,6 +16,8 @@ var english={
 	cantGetFish:"Repeat the same actions\nto wish for different result,\nit's a fruitless approach",
 	prefect:"Perfect",
 	thinkCircle:"You should think circlely",
+	thisAlsoProveYou:"This also proves you are normal",
+	youKnowSpilledWater:"You know spilled water\ncannot be gathered up",
 	close:"OFF",
 	open:"ON",
 	option:"Options",
@@ -32,5 +34,6 @@ var english={
 	unknow:"Ignorance",
 	deny:"Deny",
 	anger:"Anger",
-	switch:"Switch"
+	switch:"Switch",
+	discuss:"Negotiation",
 }

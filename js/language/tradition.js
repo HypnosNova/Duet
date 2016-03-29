@@ -14,6 +14,8 @@ var tradition={
 	dontLimit:"不要受其限制",
 	helpShackle:"讓它幫助妳脫離束縛",
 	cantGetFish:"重複相同的動作，\n但希望有不同的結果，\n這無異於緣木求魚",
+	thisAlsoProveYou:"這也證明妳是肉眼凡胎",
+	youKnowSpilledWater:"妳知道覆水難收的道理",
 	prefect:"完美",
 	thinkCircle:"妳需要循環思考",
 	close:"關閉",
@@ -32,5 +34,6 @@ var tradition={
 	unknow:"無知",
 	deny:"否定",
 	anger:"憤怒",
-	switch:"切換"
+	switch:"切換",
+	discuss:"商談",
 }
