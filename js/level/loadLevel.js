@@ -15,6 +15,8 @@ function startlevel(levelNum) {
 	drawLevel(mapLevel);
 	levelDetail = clone(mapLevel[mapLevel.length - 1]);
 	prefecttext.isPrefect = true;
+	stage.addChild(perfectContainer);
+	drawPerfectNumText(levelDetail.prefect)
 }
 
 function drawLevel(levelMap) {
@@ -67,6 +69,7 @@ function clearLevel() {
 	levelGraphics = [];
 	showPrefect = false;
 	stage.removeChild(prefecttext);
+	stage.removeChild(perfectContainer);
 }
 
 function isTouch(graphic) {

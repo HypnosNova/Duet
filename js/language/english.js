@@ -18,6 +18,8 @@ var english={
 	thinkCircle:"You should think circlely",
 	thisAlsoProveYou:"This also proves you are normal",
 	youKnowSpilledWater:"You know spilled water\ncannot be gathered up",
+	youCantAvoid:"You can't avoid it",
+	acceptNow:"Accept actuality, keep going",
 	close:"OFF",
 	open:"ON",
 	option:"Options",

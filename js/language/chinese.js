@@ -16,6 +16,8 @@ var chinese={
 	cantGetFish:"重复同样的动作，\n但希望有不同的结果，\n这无异于缘木求鱼",
 	thisAlsoProveYou:"这也证明你是肉眼凡胎",
 	youKnowSpilledWater:"你知道覆水难收的道理",
+	youCantAvoid:"你没有办法避开的",
+	acceptNow:"接受现状，继续前进",
 	prefect:"完美",
 	thinkCircle:"你需要循环思考",
 	close:"关闭",

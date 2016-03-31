@@ -2,22 +2,20 @@ var isMouseDown = false;
 var isDoubleDown = false;
 var clockwise = 0;
 
-var renderer = PIXI.autoDetectRenderer(window.innerWidth/scale/quality, sceneY, {
+var renderer = PIXI.autoDetectRenderer(window.innerWidth / scale / quality, sceneY, {
 	transparent: true
 });
 document.body.appendChild(renderer.view);
 var stage = new PIXI.Container();
 
 var pattern = Trianglify({
-	height: 1600/quality,
-	width: window.innerWidth/scale/quality,
+	height: 1600 / quality,
+	width: window.innerWidth / scale / quality,
 	cell_size: 30 + Math.random() * 100
 })
 var background = PIXI.Sprite.fromImage(pattern.png());
 stage.addChild(background)
-//	//console.log(pattern.png())
-
-
+	//	//console.log(pattern.png())
 
 var leftbtn = PIXI.Sprite.fromImage('');
 var rightbtn = PIXI.Sprite.fromImage('');
@@ -47,7 +45,7 @@ stage.addChild(rightbtn);
 
 var geminiContainer = new PIXI.Container();
 //geminiContainer.anchor(0.5)
-geminiContainer.x = (sceneX - geminiContainerWidth) / 2 +marginLeft;
+geminiContainer.x = (sceneX - geminiContainerWidth) / 2 + marginLeft;
 geminiContainer.y = (sceneY - sceneX) + (sceneX - geminiContainerWidth) / 2;
 geminiContainer.width = geminiContainerWidth;
 geminiContainer.height = geminiContainerWidth;
@@ -73,11 +71,10 @@ geminiContainer.height = geminiContainerWidth;
 var obj = PIXI.Sprite.fromImage('img/c' + quality + '.png'); //("img/icon.png")//
 obj.anchor.x = 0.5;
 obj.anchor.y = 0.5;
-obj.position.x = objInitX+marginLeft;
+obj.position.x = objInitX + marginLeft;
 obj.position.y = objInitY; //(sceneY - sceneX) + (sceneX) / 2;
 
 stage.addChild(obj);
-
 
 var logoText = new PIXI.Text("DUET", {
 	font: 350 / quality + 'px gulim',
@@ -88,25 +85,25 @@ var logoText = new PIXI.Text("DUET", {
 });
 logoText.anchor.x = 0.5;
 logoText.anchor.y = 0.5;
-logoText.x = objInitX+marginLeft;
+logoText.x = objInitX + marginLeft;
 logoText.y = 190 / quality;
 stage.addChild(logoText);
 
 var optionBtn = PIXI.Sprite.fromImage('img/option' + quality + '.png');
 optionBtn.anchor.x = 0.5;
 optionBtn.anchor.y = 0.5;
-optionBtn.x = 150 / quality+marginLeft;
+optionBtn.x = 150 / quality + marginLeft;
 optionBtn.y = 1400 / quality;
 optionBtn.timeChange = 40;
 optionBtn.interactive = true;
-optionBtn.on('click', showOption);//mousedown
+optionBtn.on('click', showOption); //mousedown
 optionBtn.on('touchend', showOption);
 stage.addChild(optionBtn);
 
 var startBtn = PIXI.Sprite.fromImage('img/start' + quality + '.png');
 startBtn.anchor.x = 0.5;
 startBtn.anchor.y = 0.5;
-startBtn.x = 750 / quality+marginLeft;
+startBtn.x = 750 / quality + marginLeft;
 startBtn.y = 1400 / quality;
 startBtn.timeChange = 40;
 startBtn.interactive = true;
@@ -117,18 +114,17 @@ stage.addChild(startBtn);
 var pauseBtn = PIXI.Sprite.fromImage('img/pause' + quality + '.png');
 pauseBtn.anchor.x = 0.5;
 pauseBtn.anchor.y = 0.5;
-pauseBtn.x = 820 / quality+marginLeft;
+pauseBtn.x = 820 / quality + marginLeft;
 pauseBtn.y = 80 / quality;
 pauseBtn.timeChange = 40;
 pauseBtn.interactive = true;
 pauseBtn.on('click', pauseGame);
 pauseBtn.on('touchend', pauseGame);
 
-
 var exitBtn = PIXI.Sprite.fromImage('img/exitBtn' + quality + '.png');
 exitBtn.anchor.x = 0.5;
 exitBtn.anchor.y = 0.5;
-exitBtn.x = 150 / quality+marginLeft;
+exitBtn.x = 150 / quality + marginLeft;
 exitBtn.y = 1400 / quality;
 exitBtn.timeChange = 40;
 exitBtn.interactive = true;
@@ -139,7 +135,7 @@ exitBtn.on('touchend', exitGame);
 var continueBtn = PIXI.Sprite.fromImage('img/start' + quality + '.png');
 continueBtn.anchor.x = 0.5;
 continueBtn.anchor.y = 0.5;
-continueBtn.x = 750 / quality+marginLeft;
+continueBtn.x = 750 / quality + marginLeft;
 continueBtn.y = 1400 / quality;
 continueBtn.timeChange = 40;
 continueBtn.interactive = true;
@@ -155,7 +151,7 @@ var versionText = new PIXI.Text("Ver 0.1", {
 });
 versionText.anchor.x = 0.5;
 versionText.anchor.y = 0.5;
-versionText.x = objInitX+marginLeft;
+versionText.x = objInitX + marginLeft;
 versionText.y = 1400 / quality;
 stage.addChild(versionText);
 
@@ -168,9 +164,71 @@ var prefecttext = new PIXI.Text(languageMap.prefect, {
 });
 prefecttext.anchor.x = 0.5;
 prefecttext.anchor.y = 0.5;
-prefecttext.x = objInitX+marginLeft;
+prefecttext.x = objInitX + marginLeft;
 prefecttext.y = objInitX / 3;
 prefecttext.alpha = 0;
+
+var perfectContainer = PIXI.Sprite.fromImage('');
+perfectContainer.anchor.x = 0.5;
+perfectContainer.anchor.y = 0.5;
+perfectContainer.x = 90 / quality + marginLeft;
+perfectContainer.y = 90 / quality;
+
+var perfectNum = new PIXI.Graphics();
+// draw a rounded rectangle
+perfectNum.lineStyle(4, 0x00dd00, 1);
+perfectNum.beginFill(0x00dd00, 1);
+perfectNum.moveTo(-50, 0);
+perfectNum.lineTo(25, -43.3);
+perfectNum.lineTo(25, 43.3);
+perfectNum.endFill();
+perfectContainer.addChild(perfectNum);
+
+var perfectNumText = new PIXI.Text(10, {
+	font: 40 / quality + 'px 微软雅黑',
+	fill: '#ffffff',
+	stroke: '#ffffff',
+	strokeThickness: 0,
+	align: 'center'
+});
+perfectNumText.anchor.x = 0.5;
+perfectNumText.anchor.y = 0.5;
+perfectNumText.x = 0;
+perfectNumText.y = 0;
+perfectContainer.addChild(perfectNumText);
+
+function drawPerfectNumText(num) {
+	if(num<0){
+		perfectNum.lineStyle(4, 0xff0000, 1);
+		perfectNum.beginFill(0xff0000, 1);
+		perfectNum.moveTo(-50, 0);
+		perfectNum.lineTo(25, -43.3);
+		perfectNum.lineTo(25, 43.3);
+		perfectNum.endFill();
+	}else{
+		perfectNum.lineStyle(4, 0x00dd00, 1);
+		perfectNum.beginFill(0x00dd00, 1);
+		perfectNum.moveTo(-50, 0);
+		perfectNum.lineTo(25, -43.3);
+		perfectNum.lineTo(25, 43.3);
+		perfectNum.endFill();
+	}
+	
+	perfectContainer.removeChild(perfectNumText);
+	perfectNumText = new PIXI.Text(Math.abs(num) , {
+		font: 40 / quality + 'px 微软雅黑',
+		fill: '#ffffff',
+		stroke: '#ffffff',
+		strokeThickness: 0,
+		align: 'center'
+	});
+	perfectNumText.anchor.x = 0.5;
+	perfectNumText.anchor.y = 0.5;
+	perfectNumText.x = 0;
+	perfectNumText.y = 0;
+	perfectContainer.addChild(perfectNumText);
+	perfectNumText.rotation=-perfectContainer.rotation;
+}
 
 function onLeftDown(eventData) {
 	if (leftDown) {
@@ -183,6 +241,7 @@ function onLeftDown(eventData) {
 		clockwise = -1;
 		if (isLevelStart && !isGamePause) {
 			levelDetail.prefect--;
+			drawPerfectNumText(levelDetail.prefect);
 		}
 	} else {
 		doubleClick(true);
@@ -213,6 +272,7 @@ function onRightDown(eventData) {
 		clockwise = 1;
 		if (isLevelStart && !isGamePause) {
 			levelDetail.prefect--;
+			drawPerfectNumText(levelDetail.prefect);
 		}
 	} else {
 		doubleClick(false);
@@ -265,7 +325,7 @@ function cancelOneClick(isClockwise) {
 }
 
 function showOption(eventData) {
-	if(optionBtn.alpha<0.99){
+	if (optionBtn.alpha < 0.99) {
 		return;
 	}
 	showMenu = 1;
@@ -280,7 +340,7 @@ function showOption(eventData) {
 }
 
 function showLevel(eventData) {
-	if(startBtn.alpha<0.99){
+	if (startBtn.alpha < 0.99) {
 		return;
 	}
 	showMenu = 1;
@@ -342,7 +402,7 @@ function exitGame() {
 	closeLevel();
 	stage.addChild(logoText);
 	stage.addChild(versionText);
-	obj.position.x = objInitX+marginLeft;
+	obj.position.x = objInitX + marginLeft;
 	obj.position.y = objInitY;
 }
 

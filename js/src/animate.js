@@ -6,6 +6,8 @@ function animate() {
 		}
 		//游戏开始
 		if (isLevelStart) {
+			perfectContainer.rotation+=0.03;
+			perfectNumText.rotation-=0.03;
 			//如果游戏一开始没有将圆盘归位，则先归位
 			if(!isInitRotation){
 				var numCircle=parseInt(obj.rotation/Math.PI/2);//获取圆周数

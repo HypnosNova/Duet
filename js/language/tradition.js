@@ -16,6 +16,8 @@ var tradition={
 	cantGetFish:"重複相同的動作，\n但希望有不同的結果，\n這無異於緣木求魚",
 	thisAlsoProveYou:"這也證明妳是肉眼凡胎",
 	youKnowSpilledWater:"妳知道覆水難收的道理",
+	youCantAvoid:"妳沒有辦法避開的",
+	acceptNow:"接受現狀，繼續前進",
 	prefect:"完美",
 	thinkCircle:"妳需要循環思考",
 	close:"關閉",
