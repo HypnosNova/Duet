@@ -13,7 +13,7 @@ ion.sound({
 var musicArr=document.getElementsByTagName("audio");
 
 function playMusic(){
-	var index=Math.floor(Math.random()*12+1);
+	var index=Math.floor(Math.random()*0+1);
 	musicArr[0].src="media/bg"+index+".mp3";
 	musicArr[0].play();
 	console.log(index);

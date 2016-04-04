@@ -1,5 +1,5 @@
 var defaultProperty = {
-	color: 0xFFFFFF,
+	color: 0xffffff,
 	x: 0,
 	y: 0,
 	speedX: 0,
@@ -99,13 +99,13 @@ var level = [
 		shape: "rect",
 		width: 480,
 		height: 80,
-		x: 140,
+		x: 130,
 		y: -4360
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
-		x: 760,
+		x: 770,
 		y: -4360
 	},{
 		prefect:4,
@@ -1709,111 +1709,397 @@ var level = [
 		timeHide:100
 	},{
 		shape: "rect",
-		width: 480,
-		height: 80,
-		x: 600,
-		y: -880,
-		speedY:7
-	},{
-		shape: "rect",
 		width: 240,
 		height: 80,
-		x: 120,
-		y: -1170,
-		speedY:7,
-	},{
-		shape: "rect",
-		width: 480,
-		height: 80,
-		x: 450,
-		y: -1670,
-		speedY:7,
-		speedR:Math.PI/60
-	},{
-		shape: "rect",
-		width: 480,
-		height: 80,
-		x: 300,
-		y: -2200,
-		speedY:7
-	},{
-		shape: "rect",
-		width: 240,
-		height: 80,
-		x: 780,
-		y: -2490,
-		speedY:7,
+		x: 760,
+		y: -1100,
+		speedY:9
 	}, {
 		shape: "rect",
-		width: 240,
-		height: 240,
-		x: 250,
-		y: -3000,
-		speedY:7
-	}, {
-		shape: "rect",
-		width: 240,
-		height: 240,
-		x: 650,
-		y: -3500,
-		speedY:7
+		width: 480,
+		height: 80,
+		x: 290,
+		y: -1100,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<990){
+				this.y+=4;
+			}
+		}
 	},{
 		shape: "rect",
 		width: 240,
 		height: 80,
 		x: 450,
-		y: -3950,
-		speedY:7,
-	},{
+		y: -2050,
+		speedY:9
+	}, {
 		shape: "rect",
 		width: 480,
 		height: 80,
-		x: 300,
-		y: -4400,
-		speedY:7
+		x: 610,
+		y: -2050,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<1100){
+				this.y+=9;
+			}
+		}
 	},{
 		shape: "rect",
 		width: 240,
 		height: 80,
-		x: 780,
-		y: -4690,
-		speedY:7,
+		x: 140,
+		y: -2700,
+		speedY:9
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 610,
+		y: -2700,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<990){
+				this.y+=4;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -3350,
+		rotation:Math.Pi/2,
+		speedY:9,
+		speedR:Math.PI/40
 	},{
 		shape: "rect",
 		width: 840,
 		height: 80,
-		x: 80,
-		y: -5300,
+		x: 820,
+		y: -3900,
 		rotation:0,
-		speedY:7,
-		speedR:Math.PI/220
+		speedY:9,
+		speedR:-Math.PI/150
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -5000,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<1120){
+				this.y+=9;
+			}
+		}
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 600,
+		y: -5000,
+		speedY:9
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -5480,
+		speedY:9
+	}, {
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -5960,
+		speedY:9
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -6500,
+		speedY:9
+	}, {
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -6980,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 820,
+		y: -7570,
+		rotation:Math.PI/2,
+		speedY:9,
+		speedR:-Math.PI/150
+	}, {
+		prefect:10,
+		passTime:1090,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		objSpeedR:Math.PI/50,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 21
+	[{
+		shape: "word",
+		text: "languageMap.faceupToFailure",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 300,
-		y: -5900,
-		speedY:7
+		y: -820,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -1300,
+		speedY:9
 	},{
 		shape: "rect",
 		width: 480,
 		height: 80,
 		x: 600,
-		y: -6380,
-		speedY:7
+		y: -2100,
+		speedY:9
 	},{
 		shape: "rect",
 		width: 240,
 		height: 80,
-		x: 120,
-		y: -6670,
-		speedY:7,
+		x: 450,
+		y: -2100,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<1000){
+				this.y+=9;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 450,
+		y: -2550,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -3000,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -3480,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 820,
+		y: -4100,
+		rotation:0,
+		speedY:9,
+		speedR:-Math.PI/150
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -4650,
+		rotation:0,
+		speedY:9,
+		speedR:Math.PI/50
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -5190,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -5480,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 630,
+		y: -6480,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<1120){
+				this.y+=9;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 240,
+		height: 240,
+		x: 270,
+		y: -6480,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -7150,
+		speedY:9,
+		rotation:Math.PI/1.5,
+		speedR:-Math.PI/50
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -7630,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 240,
+		height: 80,
+		x: 760,
+		y: -7920,
+		speedY:9
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -8900,
+		speedY:9,
+		special:function(){
+			if(this.y>200&&this.y<1120){
+				this.y+=9;
+			}
+		}
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 300,
+		y: -8900,
+		speedY:9,
 	}, {
-		prefect:9,
-		passTime:1210,
+		prefect:10,
+		passTime:1220,
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/12*5,
+		objSpeedR:Math.PI/50,
+		timeShow:50,
+		timeHold:150,
+		timeHide:100
+	}],
+	//--------------------------------------------------level 23
+	[{
+		shape: "word",
+		text: "languageMap.resistanceIsNotOnlyChoice",
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/4,
+		timeStart:40,
+		timeShow:50,
+		timeHold:200,
+		timeHide:100
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 820,
+		y: -820,
+		rotation:-Math.PI/3,
+		speedR:-Math.PI/125,
+		speedY:10
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -1470,
+		rotation:Math.PI/2,
+		speedR:Math.PI/50,
+		speedY:10
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -2050,
+		rotation:Math.PI/2,
+		speedR:-Math.PI/50,
+		speedY:10
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -2630,
+		rotation:Math.PI/1.5,
+		speedR:-Math.PI/50,
+		speedY:10
+	},{
+		shape: "rect",
+		width: 840,
+		height: 80,
+		x: 820,
+		y: -3330,
+		rotation:-Math.PI/3,
+		speedR:-Math.PI/125,
+		speedY:10
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -3980,
+		rotation:Math.PI/1.5,
+		speedR:Math.PI/50,
+		speedY:10
+	},{
+		shape: "rect",
+		width: 480,
+		height: 80,
+		x: 450,
+		y: -4560,
+		rotation:Math.PI/1.5,
+		speedR:-Math.PI/50,
+		speedY:10
+	}, {
+		prefect:4,
+		passTime:660,
+		speedY:1,
+		x:sceneX/2,
+		y:sceneY/12*5,
+		rptation:Math.PI/3,
+		objSpeedR:Math.PI/50,
 		timeShow:50,
 		timeHold:150,
 		timeHide:100

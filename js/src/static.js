@@ -1,3 +1,5 @@
+var objSpeedR=Math.PI / 60;//红蓝小球的转动速度，关卡可更改这个角速度
+
 var quality=1;
 
 var scale=window.innerHeight/1600;

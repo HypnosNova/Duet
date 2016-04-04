@@ -31,7 +31,7 @@ function resize() {
 	$(".swiper-pagination-bullet").css("width", window.innerHeight / 16 + "px").css("height", window.innerHeight / 120 + "px");
 	$("#pagination").css("top", 0 + "px").css("height", window.innerHeight / 60 + "px");
 	$(".swiper-wrapper").css("margin-top", window.innerHeight / 24 + "px").css("height",window.innerHeight *20/ 24 + "px");
-	$(".levelBox").css("width", window.innerHeight / 10 + "px").css("height", window.innerHeight / 10 + "px").css("margin-top", window.innerHeight / 34 + "px").css("margin-right", window.innerHeight / 34 + "px").css("line-height", window.innerHeight / 10 + "px").css("font-size", window.innerHeight / 20 + "px");
+	$(".levelBox").css("width", (window.innerHeight / 10-4) + "px").css("height", (window.innerHeight / 10-4) + "px").css("margin-top", window.innerHeight / 34 + "px").css("margin-right", window.innerHeight / 34 + "px").css("line-height", window.innerHeight / 10 + "px").css("font-size", window.innerHeight / 20 + "px");
 }
 resize();
 Array.prototype.remove = function(n) {

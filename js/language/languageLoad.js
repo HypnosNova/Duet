@@ -22,6 +22,7 @@ function reflashLanguage() {
 			$(switchArray[i]).text(languageMap.close);
 		}
 	}
+	$("#blackBackground").text(languageMap.switch);
 	$("#changeBackground").text(languageMap.switch);
 	$("#optionTitle").text(languageMap.option);
 	$("#controllerD").text(languageMap.control);
@@ -38,6 +39,7 @@ function reflashLanguage() {
 	$("#deny").text(languageMap.deny);
 	$("#anger").text(languageMap.anger);
 	$("#discuss").text(languageMap.discuss);
+	$("#blackBackgroundText").text(languageMap.blackBackground);
 	prefecttext = new PIXI.Text(languageMap.prefect, {
 		font: 100 / quality + 'px 微软雅黑',
 		fill: '#ffffff',

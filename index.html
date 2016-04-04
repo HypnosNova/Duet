@@ -28,6 +28,7 @@
 					画面</div>
 				<!--<div class="line">&nbsp;&nbsp;背景图片<span class="switch on">开启</span></div>-->
 				<div class="line">&nbsp;&nbsp;<span class="optionText" id="changeBackgroundText">背景切换</span><span class="switchBg on" id="changeBackground">切换</span></div>
+				<div class="line">&nbsp;&nbsp;<span class="optionText" id="blackBackgroundText">纯黑背景</span><span class="switchBg on" id="blackBackground">切换</span></div>
 				<br/>
 				<div id="languageD">
 					语言</div>
@@ -76,7 +77,7 @@
 											<div class="levelBox" level="4">V</div>
 										</td>
 										<td>
-											
+
 										</td>
 									</tr>
 									<tr>
@@ -197,6 +198,7 @@
 	<script src="js/level/level.js"></script>
 	<script src="js/level/loadLevel.js"></script>
 	<script src="js/src/animate.js"></script>
+	<script src="js/src/storage.js"></script>
 	<script>
 		$(".levelBox").bind("click", function() {
 			var levelNum = $(this).attr("level");
@@ -228,10 +230,13 @@
 		$("#changeBackground").click(function() {
 			var pattern = Trianglify({
 				height: 1600 / quality,
-				width: window.innerWidth/scale/quality,
+				width: window.innerWidth / scale / quality,
 				cell_size: 30 + Math.random() * 100
 			})
 			background.texture = PIXI.Texture.fromImage(pattern.png());
+		})
+		$("#blackBackground").click(function() {
+			background.texture = PIXI.Texture.fromImage("img/black.jpg");
 		})
 		$("#backMusicSwitch").click(function() {
 			if (backgroundMusic.paused) {
@@ -242,26 +247,22 @@
 				$("#backMusicSwitch").text(languageMap.close).removeClass("on").addClass("off");
 			}
 		})
-		
-		$("#soundEffectSwitch").click(function(){
-			console.log(isOpenSoundEffect!=isOpenSoundEffect)
-			if(isOpenSoundEffect){
-				isOpenSoundEffect=false;
-				ion.sound.volume=0;
+		$("#soundEffectSwitch").click(function() {
+			console.log(isOpenSoundEffect != isOpenSoundEffect)
+			if (isOpenSoundEffect) {
+				isOpenSoundEffect = false;
+				ion.sound.volume = 0;
 				$("#soundEffectSwitch").removeClass("on").addClass("off").text(languageMap.close);
-			}else{
-				isOpenSoundEffect=true;
-				ion.sound.volume=1;
+			} else {
+				isOpenSoundEffect = true;
+				ion.sound.volume = 1;
 				$("#soundEffectSwitch").removeClass("off").addClass("on").text(languageMap.open);
 			}
-			
 		})
-		
-		$(".radioSwitch").click(function(event){
+		$(".radioSwitch").click(function(event) {
 			$(".radioSwitch").removeClass("on").addClass("off");
 			$(this).removeClass("off").addClass("on");
 			changeLanguage($(this).attr("langangename"));
-			
 		})
 		reflashLanguage();
 	</script>

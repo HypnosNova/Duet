@@ -16,7 +16,8 @@ function startlevel(levelNum) {
 	levelDetail = clone(mapLevel[mapLevel.length - 1]);
 	prefecttext.isPrefect = true;
 	stage.addChild(perfectContainer);
-	drawPerfectNumText(levelDetail.prefect)
+	drawPerfectNumText(levelDetail.prefect);
+	objSpeedR=levelDetail.objSpeedR||Math.PI/60;
 }
 
 function drawLevel(levelMap) {
@@ -164,9 +165,15 @@ function checkPrefect() {
 		showPrefect = true;
 		stage.addChild(prefecttext);
 		prefecttext.y = levelDetail.y;
+		levelStatus[currentLevel]=PASS_PREFECT;
 	} else {
 		showPrefect = false;
+		if(levelStatus[currentLevel]!=PASS_PREFECT){
+			levelStatus[currentLevel]=PASS;
+		}
+		
 	}
+	setPassAndPerfect(levelStatus);
 }
 
 

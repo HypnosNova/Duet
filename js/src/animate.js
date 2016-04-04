@@ -2,7 +2,7 @@ function animate() {
 	requestAnimationFrame(animate);
 	if (!isGamePause) {
 		if (clockwise != 0 && isLevelStart && isInitRotation) {
-			obj.rotation += Math.PI / 60 * clockwise * isReverse;
+			obj.rotation += objSpeedR * clockwise * isReverse;
 		}
 		//游戏开始
 		if (isLevelStart) {

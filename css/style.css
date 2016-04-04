@@ -177,6 +177,15 @@ h2 {
 	float: left;
 	vertical-align: middle;
 	cursor: pointer;
+	border: 4px solid #777;
+}
+
+.passLevel{
+	border: 4px solid #fff;
+}
+
+.prefectLevel{
+	border: 4px solid #0f0;
 }
 
 .optionText{
