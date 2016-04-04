@@ -32,7 +32,7 @@ var chinese={
 	soundEffect:"声音效果",
 	graphics:"画面",
 	switchBackground:"背景切换",
-	blackBackground:"背景切换",
+	blackBackground:"纯黑背景",
 	language:"语言",
 	level:"关卡",
 	story:"故事",
