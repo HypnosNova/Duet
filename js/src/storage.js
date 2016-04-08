@@ -8,12 +8,12 @@ for (var i = 0; i < 100; i++) {
 
 if (localStorage.levelStatus) {
 	levelStatus = localStorage.levelStatus.split(",");
-	console.log("111");
+	//console.log("111");
 } else {
 	localStorage.levelStatus = levelStatus;
-	console.log("222");
+	//console.log("222");
 }
-console.log(levelStatus);
+//console.log(levelStatus);
 
 function setPassAndPerfect(levelStatus) {
 	var arr = document.getElementsByClassName("levelBox");

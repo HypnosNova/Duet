@@ -4,6 +4,7 @@ var tradition={
 	notDifficult:"這個不難\n只需一直逆時針轉",
 	neverGiveUp:"永不放棄",
 	striveFor:"有些事情值得去爭取",
+	thisWillFullOf:"它將充滿著不可思議\n的曲線與旋轉",
 	beCareful:"小心翼翼，控制好妳自己",
 	believeYourScense:"相信妳的直覺",
 	alwaysChange:"變化為常態",

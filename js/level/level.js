@@ -345,7 +345,7 @@ var level = [
 	//-----------------------------------------------level 6
 	[{
 		shape: "word",
-		text: "languageMap.striveFor",
+		text: "languageMap.thisWillFullOf",
 		speedY:1,
 		x:sceneX/2,
 		y:sceneY/4,

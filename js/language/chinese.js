@@ -4,6 +4,7 @@ var chinese={
 	notDifficult:"这个不难\n只需一直逆时针转",
 	neverGiveUp:"永不放弃",
 	striveFor:"有些事情值得去争取",
+	thisWillFullOf:"它将充满着不可思议\n的曲线与旋转",
 	beCareful:"小心翼翼，控制好你自己",
 	believeYourScense:"相信你的直觉",
 	alwaysChange:"变化为常态",
