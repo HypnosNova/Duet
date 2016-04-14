@@ -19,7 +19,6 @@ function startlevel(levelNum) {
 	stage.addChild(perfectContainer);
 	drawPerfectNumText(levelDetail.prefect);
 	objSpeedR = levelDetail.objSpeedR || Math.PI / 60;
-<<<<<<< HEAD
 	if (!mapLevel[0].mode) {
 		obj.texture = PIXI.Texture.fromImage('img/duet' + quality + '.png');
 	} else if (mapLevel[0].mode == "trio") {
@@ -28,10 +27,6 @@ function startlevel(levelNum) {
 		obj.texture = PIXI.Texture.fromImage('img/duet' + quality + '.png');
 	}
 	if (isOpenSoundEffect) {
-=======
-	if (isOpenSoundEffect) {
-		console.log(mapLevel[0].text.split(".")[1])
->>>>>>> origin/gh-pages
 		ion.sound.play(mapLevel[0].text.split(".")[1]);
 	}
 }
@@ -98,7 +93,6 @@ function isTouch(graphic) {
 		var y1 = y - Math.sin(angle) * (circleBackWidth >> 1);
 		var x2 = x + Math.cos(angle - Math.PI) * (circleBackWidth >> 1);
 		var y2 = y - Math.sin(angle - Math.PI) * (circleBackWidth >> 1);
-<<<<<<< HEAD
 		return pixInGraph(x1, y1, graphic)||pixInGraph(x2, y2, graphic);
 	} else if (mapLevel[0].mode == "trio") {
 		var x1 = x + Math.cos(angle-Math.PI/2) * (circleBackWidth >> 1);
@@ -136,13 +130,6 @@ function pixInGraph(xp, yp, graph) {
 		var x1 = x + Math.cos(angle) * (circleBackWidth >> 1);
 		var y1 = y - Math.sin(angle) * (circleBackWidth >> 1);
 		//console.log(arr)
-=======
-		return pixInGraph(x2, y2, graphic);
-	} else {
-		var arr = getFourPoint(graphic);
-		var x1 = x + Math.cos(angle) * (circleBackWidth >> 1);
-		var y1 = y - Math.sin(angle) * (circleBackWidth >> 1);
-		//console.log(arr)
 		var side1 = getDistance({
 			x: x1,
 			y: y1
@@ -159,37 +146,6 @@ function pixInGraph(xp, yp, graph) {
 			x: x1,
 			y: y1
 		}, arr[3]);
-		u1 = (side1 + side2 + graphic.height / quality) / 2;
-		u2 = (side2 + side3 + graphic.width / quality) / 2;
-		u3 = (side3 + side4 + graphic.height / quality) / 2;
-		u4 = (side1 + side4 + graphic.width / quality) / 2;
-		area1 = Math.sqrt(u1 * (u1 - side1) * (u1 - side2) * (u1 - graphic.height / quality));
-		area2 = Math.sqrt(u2 * (u2 - side2) * (u2 - side3) * (u2 - graphic.width / quality));
-		area3 = Math.sqrt(u3 * (u3 - side3) * (u3 - side4) * (u3 - graphic.height / quality));
-		area4 = Math.sqrt(u4 * (u4 - side4) * (u4 - side1) * (u4 - graphic.width / quality));
-		if (area1 + area2 + area3 + area4 - graphic.height * graphic.width / quality / quality < 0.01) {
-			return true;
-		}
-		x1 = x + Math.cos(angle - Math.PI) * (circleBackWidth >> 1);
-		y1 = y - Math.sin(angle - Math.PI) * (circleBackWidth >> 1);
->>>>>>> origin/gh-pages
-		var side1 = getDistance({
-			x: x1,
-			y: y1
-		}, arr[0]);
-		var side2 = getDistance({
-			x: x1,
-			y: y1
-		}, arr[1]);
-		var side3 = getDistance({
-			x: x1,
-			y: y1
-		}, arr[2]);
-		var side4 = getDistance({
-			x: x1,
-			y: y1
-		}, arr[3]);
-<<<<<<< HEAD
 		u1 = (side1 + side2 + graph.height / quality) / 2;
 		u2 = (side2 + side3 + graph.width / quality) / 2;
 		u3 = (side3 + side4 + graph.height / quality) / 2;
@@ -199,17 +155,6 @@ function pixInGraph(xp, yp, graph) {
 		area3 = Math.sqrt(u3 * (u3 - side3) * (u3 - side4) * (u3 - graph.height / quality));
 		area4 = Math.sqrt(u4 * (u4 - side4) * (u4 - side1) * (u4 - graph.width / quality));
 		if (area1 + area2 + area3 + area4 - graph.height * graph.width / quality / quality < 0.01) {
-=======
-		u1 = (side1 + side2 + graphic.height / quality) / 2;
-		u2 = (side2 + side3 + graphic.width / quality) / 2;
-		u3 = (side3 + side4 + graphic.height / quality) / 2;
-		u4 = (side1 + side4 + graphic.width / quality) / 2;
-		area1 = Math.sqrt(u1 * (u1 - side1) * (u1 - side2) * (u1 - graphic.height / quality));
-		area2 = Math.sqrt(u2 * (u2 - side2) * (u2 - side3) * (u2 - graphic.width / quality));
-		area3 = Math.sqrt(u3 * (u3 - side3) * (u3 - side4) * (u3 - graphic.height / quality));
-		area4 = Math.sqrt(u4 * (u4 - side4) * (u4 - side1) * (u4 - graphic.width / quality));
-		if (area1 + area2 + area3 + area4 - graphic.height * graphic.width / quality / quality < 0.01) {
->>>>>>> origin/gh-pages
 			return true;
 		}else{
 			return false;
