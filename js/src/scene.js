@@ -68,7 +68,7 @@ geminiContainer.height = geminiContainerWidth;
 //
 ////stage.addChild(geminiContainer);
 //geminiContainer.addChild(circleBack);
-var obj = PIXI.Sprite.fromImage('img/c' + quality + '.png'); //("img/icon.png")//
+var obj = PIXI.Sprite.fromImage('img/duet' + quality + '.png'); //("img/icon.png")//
 obj.anchor.x = 0.5;
 obj.anchor.y = 0.5;
 obj.position.x = objInitX + marginLeft;
